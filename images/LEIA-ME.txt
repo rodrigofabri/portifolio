@@ -1,0 +1,31 @@
+📁 PASTA DE IMAGENS
+
+Coloque aqui todas as fotos do portfólio. Sugestões de nomes que já estão referenciados no código:
+
+PERFIL:
+- perfil.jpg (foto principal do hero, na index)
+
+INTERCÂMBIO:
+- nz1.jpg, nz2.jpg, nz3.jpg, nz4.jpg, nz5.jpg, nz6.jpg
+
+PÓS-INTERCÂMBIO:
+- portiolli.jpg
+- comercial1.jpg, comercial2.jpg
+- tv1.jpg, tv2.jpg
+
+MEDALHAS:
+- medalha1.jpg, medalha2.jpg, medalha3.jpg
+
+MONITOR BEEM:
+- beem1.jpg, beem2.jpg
+
+GRÊMIO:
+- gremio1.jpg, gremio2.jpg, gremio3.jpg, gremio4.jpg
+
+💡 DICA: Para trocar uma "caixinha" por uma foto real, abra o arquivo HTML correspondente
+e substitua a div .gallery-item pela tag <img>:
+
+    <img src="../images/nz1.jpg" alt="Nova Zelândia" class="gallery-item" />
+
+Para a foto de perfil no index.html, basta editar o CSS (.photo-frame em css/style.css)
+adicionando: background-image: url('../images/perfil.jpg');
