@@ -760,3 +760,40 @@ body {
 .links-area a:visited {
   color: #ff8a8a;
 }
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.5rem;
+  margin-top:2rem;
+}
+
+.skill-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:1.5rem;
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-5px);
+  border-color:#ff6b6b;
+}
+
+.skill-card span{
+  font-size:2rem;
+  display:block;
+  margin-bottom:1rem;
+}
+
+.skill-card h3{
+  margin-bottom:0.8rem;
+  color:#ffffff;
+}
+
+.skill-card p{
+  font-size:0.95rem;
+  line-height:1.6;
+  color:#d6d6d6;
+}
