@@ -797,3 +797,47 @@ body {
   line-height:1.6;
   color:#d6d6d6;
 }
+
+/* =========================================
+   CERTIFICADOS
+========================================= */
+
+/* CERTIFICADOS */
+
+.certificados-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.certificado-card {
+  background: #111;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+}
+
+.certificado-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #000;
+}
+
+/* HORIZONTAL */
+.certificado-img.horizontal {
+  height: 220px;
+}
+
+/* VERTICAL */
+.certificado-img.vertical {
+  height: 420px;
+}
+
+.certificado-caption {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.4;
+}
