@@ -458,7 +458,7 @@ body {
   object-fit: cover; /* MUITO IMPORTANTE */
   border-radius: 12px;
   transition: var(--transicao);
-  cursor: pointer;
+  cursor: zoom-in;
 }
 
 .gallery-item:hover {
@@ -927,7 +927,7 @@ background: #3b82f6;
   font-size: 24px;
   font-weight: bold;
 
-  cursor: pointer;
+  cursor: zoom-in;
 
   transition: 0.2s;
 }
@@ -938,6 +938,6 @@ background: #3b82f6;
   transform: scale(1.05);
 }
 
-.zoomable {
+img{
   cursor: zoom-in;
 }

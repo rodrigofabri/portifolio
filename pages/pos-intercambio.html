@@ -287,7 +287,7 @@
 
       <div class="gallery">
         <div class="gallery-card">
-          <img src="../images/pos/tarcisio1.jpg" class="gallery-item zoomable">
+          <img src="../images/pos/tarcisio1.jpg" class="gallery-item">
         </div>
         <div class="gallery-card">
           <img src="../images/pos/tarcisio2.jpg" class="gallery-item">
@@ -953,7 +953,7 @@ function updateTransform() {
     `translate(${translateX}px, ${translateY}px) scale(${scale})`;
 }
 
-document.querySelectorAll(".zoomable").forEach(img => {
+document.querySelectorAll("img").forEach(img => {
 
 img.addEventListener("click", () => {
 

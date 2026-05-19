@@ -219,5 +219,128 @@
 
   </footer>
 
+<!-- MODAL DE IMAGEM -->
+<div id="imageModal" class="image-modal">
+
+  <span class="close-modal">&times;</span>
+
+  <div class="zoom-controls">
+    <button id="zoomIn">+</button>
+    <button id="zoomOut">−</button>
+  </div>
+
+  <img id="modalImage" class="modal-image">
+
+</div>
+
+<script>
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+
+const zoomInBtn = document.getElementById("zoomIn");
+const zoomOutBtn = document.getElementById("zoomOut");
+
+let scale = 1;
+let isDragging = false;
+let startX, startY;
+let translateX = 0;
+let translateY = 0;
+
+function updateTransform() {
+  modalImg.style.transform =
+    `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+}
+
+document.querySelectorAll("img").forEach(img => {
+
+img.addEventListener("click", () => {
+
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+
+  scale = 1;
+
+  translateX = 0;
+  translateY = 0;
+
+  updateTransform();
+
+});
+
+});
+
+/* IMPEDE ARRASTAR A IMAGEM NATIVO DO NAVEGADOR */
+modalImg.ondragstart = () => false;
+
+document.querySelector(".close-modal").onclick = () => {
+  modal.style.display = "none";
+};
+
+modal.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+zoomInBtn.onclick = () => {
+  scale += 0.2;
+  updateTransform();
+};
+
+zoomOutBtn.onclick = () => {
+  if (scale > 0.4) {
+    scale -= 0.2;
+    updateTransform();
+  }
+};
+
+modalImg.addEventListener("wheel", (e) => {
+
+  e.preventDefault();
+
+  if (e.deltaY < 0) {
+    scale += 0.1;
+  } else {
+    scale -= 0.1;
+  }
+
+  if (scale < 0.4) scale = 0.4;
+
+  updateTransform();
+
+});
+
+modalImg.addEventListener("mousedown", (e) => {
+
+e.preventDefault();
+
+isDragging = true;
+
+startX = e.clientX - translateX;
+startY = e.clientY - translateY;
+
+modalImg.style.cursor = "grabbing";
+
+});
+
+document.addEventListener("mousemove", (e) => {
+
+  if (!isDragging) return;
+
+  translateX = e.clientX - startX;
+  translateY = e.clientY - startY;
+
+  updateTransform();
+
+});
+
+document.addEventListener("mouseup", () => {
+
+  isDragging = false;
+  modalImg.style.cursor = "grab";
+
+});
+</script>
+
 </body>
 </html>
