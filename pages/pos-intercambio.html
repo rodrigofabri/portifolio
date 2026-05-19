@@ -949,12 +949,13 @@ let translateX = 0;
 let translateY = 0;
 
 function updateTransform() {
-  modalImg.style.transform =
-    `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+
+modalImg.style.transform =
+  `translate(calc(-50% + ${translateX}px), calc(-50% + ${translateY}px)) scale(${scale})`;
+
 }
 
-document.querySelectorAll("img").forEach(img => {
-
+document.querySelectorAll("img:not(#modalImage)").forEach(img => {
 img.addEventListener("click", () => {
 
   modal.style.display = "flex";
@@ -1038,8 +1039,7 @@ document.addEventListener("mousemove", (e) => {
 
 document.addEventListener("mouseup", () => {
 
-  isDragging = false;
-  modalImg.style.cursor = "grab";
+isDragging = false;
 
 });
 </script>
