@@ -948,3 +948,8 @@ background: #3b82f6;
 img{
   cursor: zoom-in;
 }
+
+.highlight-item{
+  text-decoration: none;
+  color: inherit;
+}
