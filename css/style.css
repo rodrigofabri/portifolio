@@ -1084,3 +1084,16 @@ img{
   height: 100%;
   border: none;
 }
+
+.hero-te-matatini{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.60),
+        rgba(0,0,0,.60)
+    ),
+    url("../images/tematatini/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
