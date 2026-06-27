@@ -954,15 +954,7 @@ img{
   color: inherit;
 }
 
-.hero-patuna {
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("../images/patuna/hero.jpg");
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 .video-float {
   float: right;
@@ -1085,15 +1077,27 @@ img{
   border: none;
 }
 
-.hero-te-matatini{
-
+.hero-tematatini{
     background:
     linear-gradient(
-        rgba(0,0,0,.60),
-        rgba(0,0,0,.60)
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.90)
     ),
     url("../images/tematatini/hero.jpg");
 
     background-size: cover;
     background-position: center;
+}
+
+.hero-patuna {
+  background:
+    linear-gradient(
+    rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.90)
+    ),
+    url("../images/patuna/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
