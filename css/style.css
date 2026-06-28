@@ -1101,3 +1101,29 @@ img{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.hero-wellington {
+  background:
+    linear-gradient(
+    rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.90)
+    ),
+    url("../images/wellington/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-rotorua {
+  background:
+    linear-gradient(
+    rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.90)
+    ),
+    url("../images/rotorua/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
