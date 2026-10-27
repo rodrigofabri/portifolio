@@ -1164,3 +1164,29 @@ img{
     grid-template-columns: 1fr;
   }
 }
+
+.hero-maori {
+  background:
+    linear-gradient(
+    rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.90)
+    ),
+    url("../images/maori/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-alimentacao {
+  background:
+    linear-gradient(
+    rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.90)
+    ),
+    url("../images/alimentacao/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
