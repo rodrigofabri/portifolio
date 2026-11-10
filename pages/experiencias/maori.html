@@ -300,7 +300,7 @@
         <div class="gallery-card video-feature">
           <div class="maori-video">
             <iframe
-              src="https://www.youtube.com/embed/I6FyOoY19io?si=9-DWHXUb7vpsygRr"
+              src="https://www.youtube.com/embed/I6FyOoY19io?si=9-DWHXUb7vpsygRr&enablejsapi=1"
               title="Minha experiência nas aulas de Māori"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -311,18 +311,47 @@
           <p class="gallery-caption">🎬 Um registro especial das aulas de Māori</p>
         </div>
 
-      </div>
+  
+      
+<!-- SEGUNDA LINHA: 3 VÍDEOS VERTICAIS -->
+<div class="video-row">
 
+  <div class="video-item">
+    <div class="youtube-video vertical">
+      <iframe
+        src="https://www.youtube.com/embed/Ba6NAchCYvQ?si=W8DqJBhdhLD9HX34&enablejsapi=1"
+        title="Vídeo 1"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 
+  <div class="video-item">
+    <div class="youtube-video vertical">
+      <iframe
+        src="https://www.youtube.com/embed/Kpt3fEGLJzw?si=MCcyDZSe11ZQwzLI&enablejsapi=1"
+        title="Vídeo 2"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 
-      <h3 style="margin: 3rem 0 1rem;">🎸 Ensaios, música e apresentações</h3>
-      <div class="gallery">
-        <div class="gallery-card"><img src="../../images/maori/maori7.jpg" class="gallery-item" alt="Ensaio de kapa haka" loading="lazy"><p class="gallery-caption">Preparação para as apresentações</p></div>
-        <div class="gallery-card"><img src="../../images/maori/maori8.jpg" class="gallery-item" alt="Atividade musical durante a aula" loading="lazy"><p class="gallery-caption">A música que nos unia</p></div>
-        <div class="gallery-card"><img src="../../images/maori/maori9.jpg" class="gallery-item" alt="Apresentação de haka" loading="lazy"><p class="gallery-caption">Uma expressão de força e identidade</p></div>
-        <div class="gallery-card"><img src="../../images/maori/maori10.jpg" class="gallery-item" alt="Apresentação cultural Māori" loading="lazy"><p class="gallery-caption">Uma apresentação que me marcou</p></div>
-        <div class="gallery-card"><img src="../../images/maori/maori11.jpg" class="gallery-item" alt="Grupo em atividade cultural" loading="lazy"><p class="gallery-caption">Fazendo parte do grupo</p></div>
-      </div>
+  <div class="video-item">
+    <div class="youtube-video vertical">
+      <iframe
+        src="https://www.youtube.com/embed/y1nGXHBxOkg?si=kU4dpAqYIupvy1n8&enablejsapi=1"
+        title="Vídeo 3"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+</div>
+</div>
+
 
       <h3 style="margin: 3rem 0 1rem;">🌿 Te Matatini e outras expressões culturais</h3>
       <div class="gallery">
@@ -454,6 +483,47 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") modal.style.display = "none";
     });
+
+
+
+// CONTROLE DOS VÍDEOS: PAUSA OS OUTROS AUTOMATICAMENTE
+const youtubePlayers = [];
+
+window.onYouTubeIframeAPIReady = function () {
+  const videos = document.querySelectorAll(
+    ".video-feature iframe, .video-row iframe"
+  );
+
+  videos.forEach((iframe) => {
+    const player = new YT.Player(iframe, {
+      events: {
+        onStateChange: function (event) {
+
+          // Quando um vídeo começar a tocar...
+          if (event.data === YT.PlayerState.PLAYING) {
+
+            // Pausa todos os outros vídeos
+            youtubePlayers.forEach((otherPlayer) => {
+              if (otherPlayer !== event.target) {
+                otherPlayer.pauseVideo();
+              }
+            });
+
+          }
+        }
+      }
+    });
+
+    youtubePlayers.push(player);
+  });
+};
+
+// CARREGA A API OFICIAL DO YOUTUBE
+const youtubeScript = document.createElement("script");
+youtubeScript.src = "https://www.youtube.com/iframe_api";
+document.head.appendChild(youtubeScript);
+
+
   </script>
 </body>
 </html>

@@ -1216,3 +1216,45 @@ img{
   height: 100%;
   border: none;
 }
+
+/* LINHA COM 3 VÍDEOS VERTICAIS */
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: 320%;
+  margin: 30px 0;
+}
+
+.video-item {
+  min-width: 0;
+  width: 100%;
+}
+
+.youtube-video.vertical {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.youtube-video.vertical iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .video-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .video-row {
+    grid-template-columns: 1fr;
+  }
+}
