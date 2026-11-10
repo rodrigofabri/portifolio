@@ -18,7 +18,17 @@
   <header class="header">
     <nav class="nav-container">
       <a href="index.html" class="logo">🏠︎<span></span></a>
-      <button class="menu-toggle" aria-label="Abrir menu" onclick="document.querySelector('.nav-menu').classList.toggle('active')">☰</button>
+      <button class="menu-toggle" aria-label="Abrir menu"
+        aria-expanded="false"
+        onclick="
+          const menu = document.querySelector('.nav-menu');
+          const aberto = menu.classList.toggle('active');
+          this.setAttribute('aria-expanded', aberto);
+          this.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+          this.textContent = aberto ? '✕' : '☰';
+        ">
+        ☰
+      </button>      
       <ul class="nav-menu">
         <li><a href="index.html" class="active">Início</a></li>
         <li><a href="pages/intercambio.html">Intercâmbio</a></li>
