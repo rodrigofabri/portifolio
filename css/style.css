@@ -1396,15 +1396,16 @@ html, body {
 
   /* Espaçamento geral */
   .hero {
-    padding: 7rem 1.2rem 3rem;
+    min-height: auto;
+    padding: 8rem 1.2rem 2.5rem;
   }
 
   .hero-content {
     gap: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
-
-
 
 /* SOBRE MIM - VERSÃO MAIS COMPACTA */
 @media (max-width: 600px) {
@@ -1490,3 +1491,187 @@ html, body {
   }
 }
 
+/* FOTO ANTES DO TEXTO - SOMENTE MOBILE */
+@media (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+}
+
+/* ============================================
+   PÓS-INTERCÂMBIO - RESPONSIVIDADE MOBILE
+   ============================================ */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO DA PÁGINA */
+  .pagina-pos .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-pos .page-hero h1 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  .pagina-pos .page-hero p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  /* ÁREA PRINCIPAL */
+  .pagina-pos main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  /* BLOCOS DE CONTEÚDO */
+  .pagina-pos .content-block {
+    padding: 1.1rem;
+    margin-bottom: 1.3rem;
+    border-radius: 13px;
+  }
+
+  .pagina-pos .content-block:hover {
+    transform: none;
+  }
+
+  .pagina-pos .content-block h2 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    gap: 0.4rem;
+  }
+
+  .pagina-pos .content-block p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+
+  /* GALERIAS DE FOTOS */
+  .pagina-pos .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 1.2rem 0;
+  }
+
+  .pagina-pos .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-pos .gallery-item {
+    width: 100%;
+    height: 155px;
+    border-radius: 9px;
+  }
+
+  /* VÍDEOS HORIZONTAIS */
+  .pagina-pos .video-float {
+    float: none;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 1rem auto 1.2rem;
+    display: block;
+  }
+
+  .pagina-pos .video-float iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* VÍDEO DO INSTAGRAM */
+  .pagina-pos .instagram-float {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 1rem auto 1.2rem;
+    display: block;
+  }
+
+  /* VÍDEO VERTICAL */
+  .pagina-pos .short-video {
+    float: none;
+    width: 75%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    margin: 1rem auto 1.2rem;
+    display: block;
+  }
+
+  .pagina-pos .short-video iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* LINKS DO INSTAGRAM E YOUTUBE */
+  .pagina-pos .social-links {
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .pagina-pos .social-mini-card {
+    width: 100%;
+    min-width: 0;
+    padding: 0.9rem 1rem;
+  }
+
+  .pagina-pos .social-mini-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .pagina-pos .social-mini-card p {
+    font-size: 0.78rem;
+    margin: 0;
+  }
+
+  /* REPORTAGENS E LINKS */
+  .pagina-pos .links-area {
+    overflow-wrap: anywhere;
+  }
+
+  .pagina-pos .links-area h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .pagina-pos .links-area ul {
+    padding-left: 1.1rem;
+  }
+
+  .pagina-pos .links-area li {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+  }
+
+  /* FRASE FINAL */
+  .pagina-pos blockquote {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-pos .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
