@@ -1403,3 +1403,90 @@ html, body {
     gap: 1.5rem;
   }
 }
+
+
+
+/* SOBRE MIM - VERSÃO MAIS COMPACTA */
+@media (max-width: 600px) {
+
+  .about-content {
+    padding: 1rem;
+  }
+
+  .about-content p {
+    font-size: 0.82rem;
+    line-height: 1.6;
+    margin-bottom: 0.7rem;
+  }
+
+}
+
+/* CARDS - 2 COLUNAS NO CELULAR */
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem 0.7rem;
+    border-radius: 12px;
+  }
+
+  .card h3 {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .card p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .card p {
+    font-size: 0.58rem;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 600px) {
+  #explorar {
+    padding-bottom: 3rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .footer {
+    margin-top: 0 !important;
+  }
+}
+
+/* RODAPÉ - AJUSTES MOBILE */
+@media (max-width: 600px) {
+  .footer {
+    padding: 1.8rem 1rem 1rem;
+    text-align: center;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0 0 0.4rem;
+  }
+
+  .footer p {
+    font-size: 0.72rem;
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
+  }
+
+  .footer a {
+    font-size: 0.72rem;
+    overflow-wrap: anywhere;
+  }
+}
+
