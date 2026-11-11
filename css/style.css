@@ -2309,15 +2309,23 @@ html, body {
   }
 
   .certificados-page .content-block {
-    padding: 0.8rem;
-    margin-bottom: 1.2rem;
-    border-radius: 13px;
-  }
+  padding: 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 1.2rem;
+  border-radius: 13px;
+}
 
-  .certificados-page .content-block h2 {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
+.certificados-page .content-block h2 {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0 0 0.8rem !important;
+  padding: 0;
+}
+
+.certificados-page .certificados-gallery {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 
   /* GALERIA - 3 CERTIFICADOS POR LINHA */
   .certificados-page .certificados-gallery {
@@ -2368,5 +2376,255 @@ html, body {
     margin: 1.5rem auto;
     font-size: 0.85rem;
     padding: 0.7rem 1.2rem;
+  }
+}
+
+/* =====================================
+   RESPONSIVIDADE - PÁGINA CATÓLICO
+===================================== */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-catolico .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-catolico .page-hero h1 {
+    font-size: 1.55rem;
+  }
+
+  .pagina-catolico .page-hero p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /* SEÇÕES */
+  .pagina-catolico main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .pagina-catolico .content-block {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 13px;
+  }
+
+  .pagina-catolico .content-block h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-catolico .content-block p {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-catolico .content-block ul {
+    padding-left: 1rem;
+  }
+
+  .pagina-catolico .content-block li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
+  }
+
+  /* GALERIAS DE FOTOS */
+  .pagina-catolico .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .pagina-catolico .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-catolico .gallery-item {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+  }
+
+  .pagina-catolico .caption {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  /* LINHA DO TEMPO */
+  .pagina-catolico .timeline {
+    gap: 0.7rem;
+  }
+
+  .pagina-catolico .timeline-item {
+    padding: 0rem;
+  }
+
+  .pagina-catolico .timeline-item h4 {
+    font-size: 0.85rem;
+  }
+
+  .pagina-catolico .timeline-item p {
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* HABILIDADES */
+  .pagina-catolico .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .pagina-catolico .skill-card {
+    min-width: 0;
+    padding: 0.8rem 0.65rem;
+  }
+
+  .pagina-catolico .skill-card h3 {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+
+  .pagina-catolico .skill-card p {
+    font-size: 0.6rem;
+    line-height: 1.4;
+  }
+
+  /* FRASE FINAL */
+  .pagina-catolico .destaque-final {
+    padding: 1rem;
+  }
+
+  .pagina-catolico .destaque-final p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-catolico .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
+
+/* =====================================
+   RESPONSIVIDADE - ROTORUA
+===================================== */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-rotorua .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-rotorua .page-hero h1 {
+    font-size: 1.65rem;
+  }
+
+  .pagina-rotorua .page-hero p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /* CONTEÚDO */
+  .pagina-rotorua main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .pagina-rotorua .content-block {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 13px;
+  }
+
+  .pagina-rotorua .content-block h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-rotorua .content-block h3 {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    margin-top: 1.2rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  .pagina-rotorua .content-block p {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-rotorua .content-block ul {
+    padding-left: 1rem;
+  }
+
+  .pagina-rotorua .content-block li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
+  }
+
+  /* LINKS DOS VÍDEOS */
+  .pagina-rotorua .links-area {
+    padding: 0.1rem;
+    margin-top: 1rem;
+  }
+
+  .pagina-rotorua .links-area h4 {
+    font-size: 0.85rem;
+  }
+
+  .pagina-rotorua .links-area li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-top: 0.4rem
+  }
+
+  /* GALERIAS */
+  .pagina-rotorua .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .pagina-rotorua .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-rotorua .gallery-item {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+  }
+
+  /* ESPAÇAMENTO ENTRE OS DIAS */
+  .pagina-rotorua .content-block .gallery + h3 {
+    margin-top: 1.5rem !important;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-rotorua .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
+
+/* AJUSTE DA CAPA ROTORUA NO CELULAR */
+@media (max-width: 600px) {
+  .hero-rotorua {
+    background-size: auto 150%;
+    background-position: center;
   }
 }
