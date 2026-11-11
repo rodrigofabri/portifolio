@@ -1546,13 +1546,13 @@ html, body {
   }
 
   .pagina-pos .content-block h2 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.4;
     gap: 0.4rem;
   }
 
   .pagina-pos .content-block p {
-    font-size: 0.84rem;
+    font-size: 0.75rem;
     line-height: 1.65;
     margin-bottom: 0.8rem;
   }
@@ -1635,7 +1635,7 @@ html, body {
   }
 
   .pagina-pos .social-mini-card p {
-    font-size: 0.78rem;
+    font-size: 0.7rem;
     margin: 0;
   }
 
@@ -1654,7 +1654,7 @@ html, body {
   }
 
   .pagina-pos .links-area li {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.5;
     margin-bottom: 0.6rem;
   }
@@ -1721,7 +1721,7 @@ html, body {
   }
 
   .pagina-intercambio .content-block p {
-    font-size: 0.84rem;
+    font-size: 0.75rem;
     line-height: 1.65;
     margin-bottom: 0.8rem;
   }
@@ -1787,7 +1787,7 @@ html, body {
 
   /* CARDS DE EXPERIÊNCIAS E VIAGENS */
   .pagina-intercambio .experiencias-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.8rem;
   }
 
@@ -1797,12 +1797,12 @@ html, body {
   }
 
   .pagina-intercambio .exp-card h3 {
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     line-height: 1.4;
   }
 
   .pagina-intercambio .exp-card p {
-    font-size: 0.78rem;
+    font-size: 0.65rem;
     line-height: 1.5;
   }
 
@@ -1863,7 +1863,7 @@ html, body {
   }
 
   .pagina-apoio .content-block p {
-    font-size: 0.84rem;
+    font-size: 0.75rem;
     line-height: 1.65;
     margin-bottom: 0.8rem;
   }
@@ -1949,3 +1949,337 @@ html, body {
   }
 
 }
+
+
+/* ============================================
+   MEDALHAS - RESPONSIVIDADE MOBILE
+   ============================================ */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-medalhas .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-medalhas .page-hero h1 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  .pagina-medalhas .page-hero p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  /* CONTEÚDO PRINCIPAL */
+  .pagina-medalhas main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  /* CARDS DAS MEDALHAS */
+  .pagina-medalhas .medals-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+  .pagina-medalhas .medal-card {
+    padding: 1.2rem;
+    min-width: 0;
+  }
+
+  .pagina-medalhas .medal-icon {
+    font-size: 2rem;
+  }
+
+  .pagina-medalhas .medal-year {
+    font-size: 0.8rem;
+  }
+
+  .pagina-medalhas .medal-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .pagina-medalhas .medal-name {
+    font-size: 0.88rem;
+  }
+
+  .pagina-medalhas .medal-card p {
+    font-size: 0.65rem;
+    line-height: 1.6;
+  }
+
+  /* TEXTO SOBRE AS CONQUISTAS */
+  .pagina-medalhas .content-block {
+    padding: 1.1rem;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.3rem;
+    border-radius: 13px;
+  }
+
+  .pagina-medalhas .content-block:hover {
+    transform: none;
+  }
+
+  .pagina-medalhas .content-block h2 {
+    font-size: 0.98rem;
+    line-height: 1.4;
+  }
+
+  .pagina-medalhas .content-block p {
+    font-size: 0.75rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+
+  /* GALERIA DE MEDALHAS */
+  .pagina-medalhas .gallery-medalhas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+    margin-top: 1.3rem;
+  }
+
+  .pagina-medalhas .gallery-medalhas .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-medalhas .gallery-medalhas .gallery-item {
+    width: 100%;
+    height: 165px;
+    border-radius: 9px;
+  }
+
+  .pagina-medalhas .gallery-medalhas .caption {
+    font-size: 0.72rem;
+    line-height: 1.4;
+    margin-top: 0.4rem;
+  }
+
+  /* FRASE FINAL */
+  .pagina-medalhas .quote-block {
+    padding: 1.2rem;
+  }
+
+  .pagina-medalhas .quote {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-medalhas .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
+
+/* =================================
+   MONITOR BEEM - MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-monitor .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-monitor .page-hero h1 {
+    font-size: 1.55rem;
+  }
+
+  .pagina-monitor .page-hero p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /* SEÇÕES E BLOCOS */
+  .pagina-monitor main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .pagina-monitor .content-block {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 13px;
+  }
+
+  .pagina-monitor .content-block h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .pagina-monitor .content-block p {
+    font-size: 0.7rem;
+    line-height: 1.55;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-monitor .content-block ul {
+    padding-left: 1rem;
+  }
+
+  .pagina-monitor .content-block li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
+  }
+
+  /* LINHA DO TEMPO */
+  .pagina-monitor .timeline {
+    gap: 0.7rem;
+  }
+
+  .pagina-monitor .timeline-item {
+    padding: 0.01rem;
+  }
+
+  .pagina-monitor .timeline-item h4 {
+    font-size: 0.85rem;
+  }
+
+  .pagina-monitor .timeline-item p {
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* CARDS DE HABILIDADES */
+  .pagina-monitor .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .pagina-monitor .skill-card {
+    min-width: 0;
+    padding: 0.8rem 0.65rem;
+  }
+
+  .pagina-monitor .skill-card h3 {
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+
+  .pagina-monitor .skill-card p {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  /* DESTAQUE FINAL */
+  .pagina-monitor .destaque-final {
+    padding: 1rem;
+  }
+
+  .pagina-monitor .destaque-final p {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-monitor .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
+/* =================================
+   GRÊMIO ESTUDANTIL - MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-gremio .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-gremio .page-hero h1 {
+    font-size: 1.55rem;
+  }
+
+  .pagina-gremio .page-hero p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+  }
+
+  /* SEÇÕES E BLOCOS */
+  .pagina-gremio main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .pagina-gremio .content-block {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 13px;
+  }
+
+  .pagina-gremio .content-block h2 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .pagina-gremio .content-block p {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    margin-bottom: 0.7rem;
+  }
+
+  .pagina-gremio .content-block ul {
+    padding-left: 1rem;
+  }
+
+  .pagina-gremio .content-block li {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
+  }
+
+  /* LINHA DO TEMPO */
+  .pagina-gremio .timeline {
+    gap: 0.7rem;
+  }
+
+  .pagina-gremio .timeline-item {
+    padding: 0.1rem;
+  }
+
+  .pagina-gremio .timeline-item h4 {
+    font-size: 0.85rem;
+  }
+
+  .pagina-gremio .timeline-item p {
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  /* CARDS DE HABILIDADES */
+  .pagina-gremio .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .pagina-gremio .skill-card {
+    min-width: 0;
+    padding: 0.8rem 0.65rem;
+    font-size: 0.72rem;
+    text-align: center;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-gremio .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
+
