@@ -1675,3 +1675,277 @@ html, body {
   }
 
 }
+
+
+/* ============================================
+   INTERCÂMBIO - RESPONSIVIDADE MOBILE
+   ============================================ */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-intercambio .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-intercambio .page-hero h1 {
+    font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  .pagina-intercambio .page-hero p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  /* CONTEÚDO PRINCIPAL */
+  .pagina-intercambio main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .pagina-intercambio .content-block {
+    padding: 1.1rem;
+    margin-bottom: 1.3rem;
+    border-radius: 13px;
+  }
+
+  .pagina-intercambio .content-block:hover {
+    transform: none;
+  }
+
+  .pagina-intercambio .content-block h2 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    gap: 0.4rem;
+  }
+
+  .pagina-intercambio .content-block p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+
+  /* GALERIAS DE FOTOS */
+  .pagina-intercambio .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 1.2rem 0;
+  }
+
+  .pagina-intercambio .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-intercambio .gallery-item {
+    width: 100%;
+    height: 155px;
+    border-radius: 9px;
+  }
+
+  .pagina-intercambio .gallery-card .caption {
+    font-size: 0.68rem;
+    line-height: 1.4;
+    margin-top: 0.4rem;
+  }
+
+  /* VÍDEOS DO YOUTUBE */
+  .pagina-intercambio .video-float {
+    float: none;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 1rem auto 1.2rem;
+    display: block;
+  }
+
+  .pagina-intercambio .video-float iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* LINKS RELACIONADOS */
+  .pagina-intercambio .links-area {
+    overflow-wrap: anywhere;
+  }
+
+  .pagina-intercambio .links-area h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .pagina-intercambio .links-area ul {
+    padding-left: 1.1rem;
+  }
+
+  .pagina-intercambio .links-area li {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+  }
+
+  /* CARDS DE EXPERIÊNCIAS E VIAGENS */
+  .pagina-intercambio .experiencias-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .pagina-intercambio .exp-card {
+    min-width: 0;
+    padding: 1rem;
+  }
+
+  .pagina-intercambio .exp-card h3 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .pagina-intercambio .exp-card p {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-intercambio .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
+
+
+/* ============================================
+   APOIOS - RESPONSIVIDADE MOBILE
+   ============================================ */
+
+@media (max-width: 600px) {
+
+  /* CABEÇALHO */
+  .pagina-apoio .page-hero {
+    padding: 7rem 1.1rem 2rem;
+  }
+
+  .pagina-apoio .page-hero h1 {
+    font-size: 1.55rem;
+    line-height: 1.35;
+    margin-bottom: 0.8rem;
+  }
+
+  .pagina-apoio .page-hero p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  /* CONTEÚDO PRINCIPAL */
+  .pagina-apoio main.section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  /* BLOCOS DE CONTEÚDO */
+  .pagina-apoio .content-block {
+    padding: 1.1rem;
+    margin-bottom: 1.3rem;
+    border-radius: 13px;
+  }
+
+  .pagina-apoio .content-block:hover {
+    transform: none;
+  }
+
+  .pagina-apoio .content-block h2 {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    gap: 0.4rem;
+  }
+
+  .pagina-apoio .content-block p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+  }
+
+  /* LISTA DE APOIADORES */
+  .pagina-apoio .content-block ul {
+    padding-left: 1.1rem;
+  }
+
+  .pagina-apoio .content-block li {
+    font-size: 0.79rem;
+    line-height: 1.6;
+    margin-bottom: 0.55rem;
+    overflow-wrap: anywhere;
+  }
+
+  .pagina-apoio .content-block li strong {
+    font-weight: 600;
+  }
+
+  /* LISTA DA FAMÍLIA */
+  .pagina-apoio .content-block li ul {
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .pagina-apoio .content-block li ul li {
+    font-size: 0.76rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* GALERIAS */
+  .pagina-apoio .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+    margin: 1.2rem 0;
+  }
+
+  .pagina-apoio .gallery-card {
+    min-width: 0;
+  }
+
+  .pagina-apoio .gallery-item {
+    width: 100%;
+    height: 145px;
+    border-radius: 9px;
+  }
+
+  .pagina-apoio .gallery-card .caption {
+    font-size: 0.67rem;
+    line-height: 1.4;
+    margin-top: 0.4rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* LINKS */
+  .pagina-apoio .links-area {
+    overflow-wrap: anywhere;
+  }
+
+  .pagina-apoio .links-area h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .pagina-apoio .links-area ul {
+    padding-left: 1.1rem;
+  }
+
+  .pagina-apoio .links-area li {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+  }
+
+  /* BOTÃO VOLTAR */
+  .pagina-apoio .btn-back {
+    display: flex;
+    width: fit-content;
+    margin: 1.5rem auto;
+    font-size: 0.85rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+}
